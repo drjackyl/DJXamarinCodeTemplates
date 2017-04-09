@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeTemplates version="3.0">
+  <CodeTemplate version="2.0">
+    <Header>
+      <_Group>C#</_Group>
+      <Version />
+      <MimeType>text/x-csharp</MimeType>
+      <Shortcut>DjPropertyJson</Shortcut>
+      <_Description>Add a property with an attribute for Newtonsoft.Json</_Description>
+      <TemplateType>Expansion</TemplateType>
+    </Header>
+    <Variables>
+      <Variable name="json-property-name">
+        <Default>json-property-name</Default>
+      </Variable>
+      <Variable name="property-type">
+        <Default>object</Default>
+      </Variable>
+      <Variable name="property-name">
+        <Default>PropertyName</Default>
+      </Variable>
+    </Variables>
+    <Code><![CDATA[[JsonProperty(PropertyName = "$json-property-name$")]
+public $property-type$ $property-name$ { get; set; }$end$]]></Code>
+  </CodeTemplate>
+</CodeTemplates>

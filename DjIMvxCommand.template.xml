@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeTemplates version="3.0">
+  <CodeTemplate version="2.0">
+    <Header>
+      <_Group>C#</_Group>
+      <Version />
+      <MimeType>text/x-csharp</MimeType>
+      <Shortcut>DjIMvxCommand</Shortcut>
+      <_Description>Add an IMvxCommand-property</_Description>
+      <TemplateType>Expansion</TemplateType>
+    </Header>
+    <Variables>
+      <Variable name="command-name">
+        <Default>DoSomething</Default>
+      </Variable>
+      <Variable name="command-args">
+        <Default>()</Default>
+      </Variable>
+      <Variable name="command-arg-types">
+        <Default>&lt;&gt;</Default>
+      </Variable>
+    </Variables>
+    <Code><![CDATA[public IMvxCommand $command-name$Command
+{
+    get
+    {
+        return new MvxCommand$command-arg-types$($command-args$ =>
+        {
+            $end$
+        });
+    }
+}]]></Code>
+  </CodeTemplate>
+</CodeTemplates>

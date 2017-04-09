@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeTemplates version="3.0">
+  <CodeTemplate version="2.0">
+    <Header>
+      <_Group>C#</_Group>
+      <Version />
+      <MimeType>text/x-csharp</MimeType>
+      <Shortcut>DjMock</Shortcut>
+      <_Description>Create a mock with Rhino.Mocks and register it</_Description>
+      <TemplateType>Expansion</TemplateType>
+    </Header>
+    <Variables>
+      <Variable name="member">
+        <Default>member</Default>
+      </Variable>
+      <Variable name="interface">
+        <Default>interface</Default>
+      </Variable>
+    </Variables>
+    <Code><![CDATA[$member$ = MockRepository.GenerateMock<$interface$>();
+Ioc.RegisterSingleton($member$);]]></Code>
+  </CodeTemplate>
+</CodeTemplates>

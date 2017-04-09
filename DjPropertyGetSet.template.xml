@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeTemplates version="3.0">
+  <CodeTemplate version="2.0">
+    <Header>
+      <_Group>C#</_Group>
+      <Version />
+      <MimeType>text/x-csharp</MimeType>
+      <Shortcut>DjPropertyGetSet</Shortcut>
+      <_Description>Add a property with a getter and a setter</_Description>
+      <TemplateType>Expansion</TemplateType>
+    </Header>
+    <Variables>
+      <Variable name="property-type">
+        <Default>object</Default>
+      </Variable>
+      <Variable name="property-name">
+        <Default>PropertyName</Default>
+      </Variable>
+      <Variable name="source">
+        <Default>source</Default>
+      </Variable>
+      <Variable name="source-value">
+        <Default>sourceValue</Default>
+      </Variable>
+    </Variables>
+    <Code><![CDATA[public $property-type$ $property-name$
+{
+    get
+    {
+        return $source-value$;
+    }
+    set
+    {
+        $source-value$ = value;
+    }
+}]]></Code>
+  </CodeTemplate>
+</CodeTemplates>

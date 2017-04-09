@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeTemplates version="3.0">
+  <CodeTemplate version="2.0">
+    <Header>
+      <_Group>C#</_Group>
+      <Version />
+      <MimeType>text/x-csharp</MimeType>
+      <Shortcut>DjException</Shortcut>
+      <_Description>Create a complete Exception-subclass</_Description>
+      <TemplateType>Expansion</TemplateType>
+    </Header>
+    <Variables>
+      <Variable name="exception-type-name">
+        <Default>ExceptionTypeName</Default>
+      </Variable>
+      <Variable name="namepsace-name">
+        <Default>Namespace</Default>
+      </Variable>
+    </Variables>
+    <Code><![CDATA[using System;
+
+namespace $namepsace-name$
+{
+    public class $exception-type-name$ : Exception
+    {
+        public $exception-type-name$()
+            : base()
+        {
+        }
+
+        public $exception-type-name$(string message)
+            : base(message)
+        {
+        }
+
+        public $exception-type-name$(string message, Exception innerException)
+            : base(message, innerException)
+        {
+        }
+    }
+}
+
+]]></Code>
+  </CodeTemplate>
+</CodeTemplates>

@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeTemplates version="3.0">
+  <CodeTemplate version="2.0">
+    <Header>
+      <_Group>C#</_Group>
+      <Version />
+      <MimeType>text/x-csharp</MimeType>
+      <Shortcut>DjUsingEnclose</Shortcut>
+      <_Description>Enclose in using()</_Description>
+      <TemplateType>SurroundsWith</TemplateType>
+    </Header>
+    <Variables />
+    <Code><![CDATA[using($selected$)
+{
+    $end$
+}]]></Code>
+  </CodeTemplate>
+</CodeTemplates>

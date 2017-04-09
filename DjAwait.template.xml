@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeTemplates version="3.0">
+  <CodeTemplate version="2.0">
+    <Header>
+      <_Group>C#</_Group>
+      <Version />
+      <MimeType>text/x-csharp</MimeType>
+      <Shortcut>DjAwait</Shortcut>
+      <_Description>Add an awaited call with ConfigureAwait(false)</_Description>
+      <TemplateType>Expansion</TemplateType>
+    </Header>
+    <Variables>
+      <Variable name="call-to-await">
+        <Default>CallToAwait()</Default>
+      </Variable>
+      <Variable name="configure-await-false">
+        <Default>.ConfigureAwait(false)</Default>
+      </Variable>
+    </Variables>
+    <Code><![CDATA[await $call-to-await$$configure-await-false$$end$]]></Code>
+  </CodeTemplate>
+</CodeTemplates>
