@@ -1,5 +1,7 @@
 # DJXamarinCodeTemplates
 
+**This repository is now _deprecated_, as Visual Studio for Mac has been released and, though being the same, replaces Xamarin Studio**
+
 A collection of daily-work code-templates I use in Xamarin Studio.
 
 The templates are convenience-templates for things I use a lot. They include templates specific to MvvmCross, as it is part of our standard-setup of Xamarin-projects.
@@ -12,7 +14,7 @@ Naming is a bit inconsistent here. the "template"-files are stored in the snippe
 
 The user's code-templates in Xamarin are located in
 
-```
+```plain
 ~/Library/XamarinStudio-6.0/Snippets
 ```
 
